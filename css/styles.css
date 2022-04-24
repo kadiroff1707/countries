@@ -1,5 +1,5 @@
 /* CUSTOM PROPS */
-:root{
+:root {
   --body-bg: #fafafa;
   --element-bg: #fff;
   --text-color: #111517;
@@ -45,7 +45,7 @@
 
 
 /* GLOBAL */
-html{
+html {
   scroll-behavior: smooth;
   height: 100%;
   box-sizing: border-box;
@@ -53,11 +53,11 @@ html{
 
 *,
 *::before
-*::after{
+*::after {
   box-sizing: inherit;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -72,17 +72,17 @@ body{
   color 0.4s ease;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 /* DARK MODE */
-.dark-mode{
+.dark-mode {
   --body-bg: #202c36;
   --element-bg: #2b3844;
   --text-color: #fff;
@@ -90,7 +90,7 @@ a{
 
 
 /* CONTAINER */
-.container{
+.container {
   width: 100%;
   max-width: 1320px;
   padding-left: 20px;
@@ -101,7 +101,7 @@ a{
 
 
 /* MAIN-CONTENT */
-.main-content{
+.main-content {
   flex-grow: 1;
 }
 
@@ -129,11 +129,11 @@ align-items: center;
   color: var(--text-color);
 }
 
-.site-header-logo:hover{
+.site-header-logo:hover {
   opacity: 0.8;
 }
 
-.site-header-logo:active{
+.site-header-logo:active {
   opacity: 0.6;
 }
 
@@ -145,22 +145,52 @@ align-items: center;
   color: var(--text-color);
 }
 
-.site-header-theme-toggler:hover{
+.site-header-theme-toggler:hover {
   opacity: 0.8;
 }
 
-.site-header-theme-toggler:active{
+.site-header-theme-toggler:active {
   opacity: 0.6;
 }
 
 .site-header-theme-toggler-inner {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .site-header-theme-togger-text {
-margin-left: 8px;
-font-size: 16px;
-line-height: 22px;
-font-weight: 600;
+  margin-left: 8px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+
+/* FILTERS */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.filters-search-input {
+  min-width: 480px;
+  padding: 18px 74px;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+}
+
+.filters-region-select {
+  min-width: 200px;
+  padding: 18px 24px;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
 }
