@@ -68,6 +68,8 @@ body{
   line-height: 16px;
   background-color: var(--body-bg);
   color: var(--text-color);
+  transition: background-color 0.4s ease,
+  color 0.4s ease;
 }
 
 img{
@@ -135,7 +137,7 @@ align-items: center;
   opacity: 0.6;
 }
 
-.site-header-them-toggler {
+.site-header-theme-toggler {
   padding: 0;
   border: 0;
   background-color: transparent;
@@ -143,11 +145,11 @@ align-items: center;
   color: var(--text-color);
 }
 
-.site-header-them-toggler:hover{
+.site-header-theme-toggler:hover{
   opacity: 0.8;
 }
 
-.site-header-them-toggler:active{
+.site-header-theme-toggler:active{
   opacity: 0.6;
 }
 
@@ -156,7 +158,7 @@ display: flex;
 align-items: center;
 }
 
-.site-header-them-togger-text {
+.site-header-theme-togger-text {
 margin-left: 8px;
 font-size: 16px;
 line-height: 22px;
